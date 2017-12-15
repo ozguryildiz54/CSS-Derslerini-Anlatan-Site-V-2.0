@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div ><br>
+			<div class="right"> 
+				<h2>CSS Arkaplanlar</h2>
+				<br/><br/>
+				<div>
+					Bu sayfada HTML sayfanızın ya da sayfanızda bir bölümün arkaplan rengini, resmini ve özelliklerini nasıl belirleyeceğiniz ile ilgili bilgiler bulunmaktadır.
+					CSS arkaplan özellikleri bir HTML nesnesine arkaplan eklemenizde yardımcı olur. Bununla ilgili olarak tanıyacağımız CSS kodları:
+					<br/><br/>
+					<ul  class="liste-kaydir"  id="cerceve">
+					  <li>background-color</li>
+					  <li>background-image</li>
+					  <li>background-repeat</li>
+					  <li>background-attachment</li>
+					  <li>background-position</li>
+					  <li>background</li>
+					</ul>
+					<br/>
+					<h2>CSS'de Renk İfadeleri</h2>
+					CSS dosyamızda yer yer renkleri belirtmemiz gerekebilir. Bunun için çeşitli yollar var. Bunlardan en çok kullanılan üç tanesi:
+					<br/><br/>
+					<ul  class="liste-kaydir"  id="cerceve">
+					  <li>Onaltılık (Hex) Renkler</li>
+					  <li>RGB (Kırmızı, Yeşil, Mavi) Renkler</li>
+					  <li>Tarayıcı Renk İsimleri</li>
+				   </ul>
+					<br /><br />
+					Onaltılık (Hex) Renkler: #000000 şeklinde önce diyez sonra 6 adet 0-9 ve A-F değerleri alabilen sembollerden oluşur. Örneğin #404040 bir rengi ifade etmektedir.
+					Bu renk kodlarına resim işlem programlarınız yardımıyla (photoshop, paint shop pro gibi) ulaşabilirsiniz.
+					RGB (Kırmızı, Yeşil, Mavi) Renkler: Bir renk oluştururken kırmızı, yeşil ve mavinin tonlarını belirterek renk oluşturmamızı sağlar. Örneğin rgb( 0, 0, 0 ) siyah rengi belirtir. Mavi bir renk elde etmek istediğimizde Red - Green - Blue üçlemesinde en sonda yer alan mavinin değerini arttırmamız yeterli olur. Yani rgb( 0, 0, 255 ) mavi rengi verir. Windows'daki Paint Brush (MS Paint) programı ve diğer resim editörleri yardımıyla RGB değerlerini alarak renk oluşturabilirsiniz.
+					Tarayıcı Renk İsimleri: İngilizce olarak belirlenmiş bazı renk adlarını yazarak renk elde edebilirsiniz. Örneğin white beyaz, black siyah, blue mavi rengini verecektir.
+					Aşağıda renklerle ilgili örnek bir kullanım var:
+
+					<br /><br/>
+					<p class="liste-kaydir"  id="cerceve"><br/>
+					  /* Koyu kırmızı */<br/>
+					  p { color: #CC0000; }<br/>
+					  /* Yeşilin bir tonu */<br/>
+					  div { color: line; }<br/>
+					  /* Mavi renk */<br/>
+					  code { color: rgb( 0, 0, 255 ); }
+				   </p>
+					<br/>
+					<h2>background-color: Arkaplan Rengi</h2>
+					Bir elementin arkaplan rengini belirlememizi sağlar.
+					<br/><br/>
+					div { background-color: #EFEFEF; }
+					<br/><br/>
+					<h2>background-image: Arkaplan Resmi</h2>
+					Bir element içinde arkaplan resmi kullanmamızı sağlar.
+					<br/><br/>
+			        body { background-image: url('resim.jpg'); }
+					<br/><br/>
+					Yukarıdaki gibi url('') yazılarak arasında resmin adı veya yolu yazılır. Örnekte resmin adı resim.jpg olarak gösterilmiştir.
+					<br/><br/> 
+					<h2>background-repeat: Arkaplan Tekrarı / Döşeli</h2>
+					Kullandığımız arkaplan resminin tekrar edip etmeyeceğini belirtmemizi sağlar. Dört kullanımı vardır:
+					<br/><br>
+					<ul class="liste-kaydir"  id="cerceve">
+					  <li>no-repeat : Tekrar edilmeyecektir</li>
+					  <li>repeat : Tekrarlanacaktır / döşenecektir</li>
+					  <li>repeat-x : Sadece sağa doğru tekrar edecektir</li>
+					  <li>repeat-y : Sadece aşağı doğru tekrar edecektir</li>
+				   </ul>
+					<br/>
+					Aşağıdaki kullanım örneğini inceleyelim:
+					<br/><br/>
+					<p class="liste-kaydir"  id="cerceve">
+					  body {<br/>
+						 background-image: url('resim.jpg');<br/>
+						 background-repeat: no-repeat;<br/>
+					  }
+				   </p>
+					<br /><br />
+					Yukarıdaki css kodu resmin tekrarlanmayacağını tarayıcıya bildirir.
+					<h2>background-attachment: Arkaplan Sabitliği</h2>
+						Bu kod kullandığımız arkaplanın sabit kalıp kalmayacağı hakkında ayar yapmamızı sağlar. Eğer özellik değerinin sabit kalmasını (yani sayfanın yerine göre değişmemesini) istiyorsak fixed özelliği kullanırız.
+					<br /><br />
+					<p class="liste-kaydir"  id="cerceve">
+					  body {<br />
+						 background-image: url('resim.jpg');<br />
+						 background-attachment: fixed;<br />
+					  }
+				    </p>
+					<br /><br />
+					<h2>background-position: Resmin Nereye Hizalanacağı</h2>
+					Eğer background-repeat özelliğini no-repeat olarak belirlediysek bu kod yardımıyla onun hizalanma şeklini belirleme şansına sahip oluruz.<br><br>
+					<p class="liste-kaydir"  id="cerceve">
+					  body {<br />
+						 background-image: url('resim.jpg');<br />
+						 background-repeat: no-repeat;<br />
+						 background-position: right top;<br />
+					  }
+				    </p>
+					<br /><br />
+					Yukarıda yer alan kod arkaplan resminin right (sağ) ve top (üst) tarafa doğru hizalanacağını bildirir.
+					<h2>background: Arkaplan Belirlemenin Kısa Yolu</h2>
+					Yukarıdaki tüm özellikleri tek bir kodda kullanmanız mümkün. Bunun için kullanacağımız kod: background.<br><br>		
+					<p class="liste-kaydir"  id="cerceve">
+					  body {<br />
+						 background: #000000 url('resim.jpg') no-repeat right top;<br />	
+					  }
+					</p><br>		
+					Yukarıdaki kodda belirtilenler sırasıyla: background-color, background-image, background-repeat ve background-position.				    
+					<br /><br />
+					<div class="kaydir">
+						<a href="6- CSS Yazılar.html" id="next-page">
+							Sonraki Sayfa ---> CSS Yazılar
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir"  id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

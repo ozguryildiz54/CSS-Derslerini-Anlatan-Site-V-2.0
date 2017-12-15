@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div>
+			<div class="right"> 
+				<div>
+
+					   <h2>CSS Pozisyon Belirleme (position)</h2>
+
+					   CSS aynı zamanda HTML elementlerinin diğer elementlere göre konumunu belirlemenizi sağlar. Bir HTML elementini diğerinin altına ya da üstüne alabilir ve bir HTML elementi fazla büyükse ne yapılacağına karar verebilirsiniz.<br><br>
+
+					   Tüm elementler üst (top), alt (bottom), sağ (right) ve sol (left) özelliklerine sahiptir. Ancak bu özellikler CSS'deki <b>position</b> özelliği belirtilmemişse işe yaramayacaktır. Ayrıca birbirinden farklı dört pozisyon belirleme yöntemi vardır. Bunlar:<br><br>
+
+					   <ul class="liste-kaydir" id="cerceve">
+						  <li><b>static</b> - Hiçbir özellik belirtilmediyse</li>
+						  <li><b>fixed</b> - Sabit, tarayıcıya göre hareket etmeyen element</li>
+						  <li><b>relative</b> - Normal olması gereken pozisyona göre konum belirlemek</li>
+						  <li><b>absolute</b> - Koordinat belirleyerek sayfada bir yere yerleştirmek</li>
+					   </ul>
+
+					   <h2>static: Olması Gerektiği Gibi Bırakmak</h2>
+
+					   Eğer <b>position</b> CSS kodunu hiç kullanmadıysak HTML nesneleri olduğu gibi sıralanacaktır. Bu şekilde olursa HTML elementinin alt, üst, sağ ve sol özellikleri belirlenemez.<br><br>
+
+					   <h2>fixed: Sabitlemek</h2>
+
+					   Bir HTML elementini tarayıcı ekranına sabitlemek. Kaydıracı (scroll) kullansanız bile o element orada yer alacaktır (hareket etmez).<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   p.fixed
+					   {
+						  position: fixed;
+
+						  top: 30px;
+						  right: 5px;
+					   }
+					   </div><br>
+
+					   Yukarıdaki kod çalıştırılırsa "fixed" özelliğine sahip P elementinin sağdan 5 piksel üstten 30 piksel noktasında sabit bir şekilde kaldığını göreceğiz.<br><br>
+
+					   Bu tarz elementler bir diğerinin üzerine geçebilir ve diğerini kapatabilir.<br><br>
+
+					   <h2>relative: Normal Pozisyona Göre Konumlama</h2>
+
+					   Bir HTML elementini sahip olduğu pozisyondan yukarı, aşağı, sağa ve sola doğru ayarlamamızı sağlar. Elementin kapladığı alan tarayıcı tarafından tutulmuştur, dolayısıyla bunda bir değişiklik olmaz. Ancak biz sağ, sol, alt ve üst tarafa doğru hareket ettirebiliriz.<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   h2
+					   {
+						  position: relative;
+
+						  left: -20px;
+					   }
+					   </div><br>
+
+					   Yukarıdaki örnekte H2 elementi kullanıldığı yerden 20 piksel sola kayacak ve oradan başlayacaktır. Bu durumda diğer elementlerin alanına girebilecektir.<br><br>
+
+					   <h2>absolute: Herhangi Bir Konum Belirleme</h2>
+
+					   Herhangi bir elemente göre ya da element belirtilmediyse tüm HTML sayfasına göre yer alacağı konum piksel olarak ifade edilir. Örneğin H2 elementinin sayfanın başlangıç noktasının (0, 0) 100 piksel sağında ve 150 piksel altında (100, 150) olmasını istiyorsak:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   h2
+					   {
+						  position: absolute;
+
+						  left: 100px;
+						  top: 150px;
+					   }
+					   </div><br>
+
+					   Bu tarz belirlenen pozisyonlar RELATIVE'den farklı olarak alan kaplamazlar. Yani sayfamızdan soyutlanmışlardır. Bağımsız hareket eden ve sadece tek bir başlangıç noktasını dikkate alan elementler gibi düşünülebilir.<br><br>
+
+					   "Absolute" özellikli elementler diğer elementlerin üzerine geçebilir ve onları kapayabilir.<br><br>
+
+					   <h2>z-index: Elementin Önceliğini Belirlemek</h2>
+
+					   Nasıl Photoshop tarzı programlarda katmanlarla çalışılıyor ve katmanların sırası belirlenebiliyorsa, CSS'de de <b>z-index</b> özelliği ile bunu belirleyip bir HTML elementinin diğerinin üzerinde ya da altında görünmesini sağlayabiliriz.<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+						 img
+						 {
+						  position: absolute;
+
+						  left: 0px;
+						  top: 0px;
+
+						  z-index: -1;
+						 }
+					   </div><br>
+
+					   Yukarıda -1 değeri ile belirttiğimiz resim diğer tüm elementlerin altında görünecektir. Çünkü diğer elementlerde bu değer belirtilmediyse 0 (sıfır) olarak algılanacaktır. Buna karşın bu element -1 olduğu için alt katman kabul edilecektir.<br><br>
+
+					   Negatif değerler en alt katmanı pozitif değerler üst katmanları ifade eder. Örneğin biri -2 biri -5 olan iki z-index özelliğine sahip elementten daha büyük olan -2 özelliğine sahip element daha üstte görünecektir.
+				   <br/><br/>
+					<div class="kaydir">
+						<a href="20- Css Kaydırma (Float).html" id="next-page">
+							Sonraki Sayfa ---> Css Kaydırma (Float)
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir" id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

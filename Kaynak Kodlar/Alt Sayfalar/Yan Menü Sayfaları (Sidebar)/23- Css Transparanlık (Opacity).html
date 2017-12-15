@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 
+				<div>
+					   <h2>CSS Transparanlık (opacity)</h2>
+
+					   CSS kullanarak kolaylıkla resimlerinize şeffaflık (transparanlık) özelliği verebilirsiniz.<br><br>
+
+					   <h2>Transparan Resim Yaratmak</h2>
+
+					   CSS3'de yer alan <b>opacity</b> kodu resmin şeffaflık oranını ayarlamamızı sağlar:<br><br>
+						
+					   <img src="../../images/th_1.jpg" style="opacity: 0.4; filter: alpha(opacity=40);"><br><br>
+
+					   <div  id="cerceve" class="liste-kaydir">
+					   img<br>
+					   {<br>
+						  <div class="liste-kaydir">/* Transparanlık oranı 40% */<br>
+						  opacity: 0.4;<br>
+						  /* IE8 ve aşağısındaki tarayıcılarda sorun çıkmaması için */<br>
+						  filter: alpha(opacity=40);</div>
+					   }
+					   </div><br>
+
+					   Yukarıda dikkat edildiyse iki kez 40% olduğunu belirttik. Birinci opacity kodumuz tüm güncel tarayıcılar için geçerli. Ancak bu kod Internet Explorer 8 ve aşağısında görüntülenmez. Bu sorunu düzeltmek için IE8 ve aşağı browserların anlayacağı tarz ikinci bir kod yazdık: <b>filter: alpha(opacity=40);</b> Buradaki 40, %40 ı ifade eder.<br><br>
+
+					   <h2>Fareyle Resmin Transparanlığını Değiştirmek</h2>
+
+					   <img src="../../images/th_1.jpg">
+					   <img src="../../images/th_2.jpg">
+					   <img src="../../images/th_3.jpg"><br><br>
+
+					   <div  id="cerceve" class="liste-kaydir"
+					   img.stil { opacity: 0.5; filter: alpha(opacity=50); }<br>
+
+					   img:hover.stil { opacity: 1.0; filter: alpha(opacity=100); }
+
+					   </div><br>
+
+					   <h2>Arkaplan Üzerinde Transparan Yazı</h2>
+
+					   <div class="background" class="liste-kaydir">
+					   <div class="transbox">
+					   <p>"Sevdiği kızı bırakıp gurbete gitmişti genç. Fakat aradan geçen yıllar sevgisinde hiç bir azalışa neden olmamıştı.Yıllar sonra döndügünde sevdiğinden şu sözleri işitti:"A gönlüme hükmeden. Bunca yıl geçti, yolunu gözledim. Ne bir haber, ne bir mektup?!. Meğer ne kadar vefasızmışsın?."
+					   Bunun üzerine genç başını önüne eğdi, gözlerinden yaşlar akarken cevap verdi:" Ey sevgili! yüzünü görmek benim için uğruna ölünecek bir hasret iken, o şerefi postacıya mı bağışlasaydım?!"
+					   </p>
+					   </div>
+					   </div><br><br>
+
+					   HTML kodumuz ve stillerimiz:<br><br>
+
+					   <div  id="cerceve" class="liste-kaydir">
+						&lt;html&gt;
+							 <div class="liste-kaydir">&lt;head&gt;
+								 <div class="liste-kaydir">&lt;style type="text/css"&gt;
+								 <div class="liste-kaydir">	div.background {<br>
+									 <div class="liste-kaydir">   width:400px;<br>
+										height:330px;<br>
+										background:url('th_4.jpg') repeat;<br>
+										border:2px solid black;<br></div>
+									}</div><br>
+								    <div class="liste-kaydir">div.transbox {<br>
+									<div class="liste-kaydir">  width:300px;<br>
+									  height:260px;<br>
+									  margin:30px 50px;<br>
+									  background-color:#ffffff;<br>
+									  border:1px solid black;<br>
+									  opacity:0.6;<br>
+									  filter:alpha(opacity=60);<br></div>
+								   }</div><br>
+								   <div class="liste-kaydir"> div.transbox p {<br>
+									 <div class="liste-kaydir"> margin:30px 40px;<br>
+									  font-weight:bold;<br>
+									  color:#000000;<br></div>
+								   }</div><br>
+							   &lt;/style&gt;</div>
+						&lt;/head&gt;</div>
+
+						 <div class="liste-kaydir">&lt;body&gt;
+						 <div class="liste-kaydir">   &lt;div class="background"&gt;
+						 <div class="liste-kaydir">	   &lt;div class="transbox"&gt;
+							 <div class="liste-kaydir">   &lt;p&gt;"<br>
+									 <div class="liste-kaydir"> Sevdiği kızı bırakıp gurbete gitmişti genç.
+									  Fakat aradan geçen yıllar sevgisinde hiç bir azalışa
+									  neden olmamıştı.Yıllar sonra döndügünde sevdiğinden
+									  şu sözleri işitti:"A gönlüme hükmeden. Bunca yıl geçti,
+									  yolunu gözledim. Ne bir haber, ne bir mektup?!. Meğer ne
+									  kadar vefasızmışsın?."&lt;br /&gt;&lt;br /&gt;
+									  Bunun üzerine genç başını önüne eğdi, gözlerinden yaşlar
+									  akarken cevap verdi:" Ey sevgili! yüzünü görmek benim
+									  için uğruna ölünecek bir hasret iken, o şerefi postacıya
+									  mı bağışlasaydım?!"</div>
+							   &lt;/p&gt;</div>
+							   &lt;/div&gt;</div>
+						   &lt;/div&gt;</div>
+					   &lt;/body&gt;</div>
+				    &lt;/html&gt;
+					</div><br><br>
+					<div class="kaydir">
+						<a href="24- Css Çıktı Türleri (Media).html" id="next-page">
+							Sonraki Sayfa ---> Css Çıktı Türleri (Media)
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir" id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

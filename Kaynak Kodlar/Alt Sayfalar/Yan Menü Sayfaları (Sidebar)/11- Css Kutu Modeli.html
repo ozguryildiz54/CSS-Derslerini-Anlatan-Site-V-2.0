@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 		    
+					   <h2>CSS Kutu Modeli</h2>
+					   Bir HTML nesnesi kutu gibi davranabilir. İşte bu kutu şekilli tasarım modeline CSS Kutu Modeli diyoruz.<br><br>
+					   Kutu modelinde size tanıtacağımız dört özellik var:<br><br>
+					   <ul class="liste-kaydir" id="cerceve">
+						  <li><b>Margin</b> - Kenarlığın çevresinde verilen boşluk.</li>
+						  <li><b>Border</b> - Kenarlık</li>
+						  <li><b>Padding</b> - Kenarlık ile içerik arasındaki boşluk. Arkaplan rengine boyanır.</li>
+						  <li><b>Content (İçerik)</b></li>
+					   </ul><br/><br>
+
+					   <img src="../../images/kutu-modeli.gif" alt="Resme Ulaşılamıyor!" width="400"><br><br>
+
+					   Yukarıda CONTENT içeriğin bulunduğu kısımdır. İçerik ile kenarlık arasında verdiğimiz boşluk <b>padding</b>, kenarlıktan sonra vereceğimiz boşluk ise <b>margin</b> olarak adlandırılır.<br><br>
+
+					   <h2>Bir Elementin Genişlik ve Yüksekliği</h2>
+
+					   İçerik alanının genişliği <b>width</b> ve yüksekliği <b>height</b> özelliği ile ayarlanır.<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   
+					      .kutum {<br>
+						  width:250px;<br>
+						  padding:10px;<br>
+						  border:5px solid gray;<br>
+						  margin:10px;
+					   }
+					   
+					   </div><br>
+
+					   Yukarıdaki örnekte genişlik (width) 250 piksel olarak ayarlanmıştır. Peki HTML dosyamızda da bu elementin kaplayacağı alan 250 piksel mi olacaktır? Tabiki HAYIR!<br><br>
+
+					   Şimdi hesaplayalım:<br><br>
+
+					   <ul class="liste-kaydir" id="cerceve">
+						  <li>250 piksel = Genişlik</li>
+						  <li>20 piksel = Sağdan ve Soldan İç Boşluk (padding 10x2)</li>
+						  <li>10 piksel = Sağ ve Sol Kenarlıklar (border 5x2)</li>
+						  <li>20 piksel = Sağ ve Sol Dış Boşluk (margin 10x2)</li>
+						  <li><b>300 piksel = Toplam Genişlik</b></li>
+					   </ul><br/>
+
+					   Kısacası kodlama yaparken genişliği iyi hesap etmek için boşluk, kenarlık ve içerik genişliği toplanarak hesaplanmalıdır.<br><br>
+
+					   Yüksekliği hesap ederken width değeri yerine height değeri ve boşluk, kenarlıklar toplanarak hesap edilmelidir.<br><br>
+
+					   Şimdi dış boşluğu 20 piksel, iç boşluğu 5 piksel, kenarlığı 3 piksel ve genişliği 300 piksel olan bir kutu oluşturalım:<br><br>
+
+					   CSS Kodumuz:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					      .kutum {
+
+						  /* Dış boşluk */
+						  margin: 20px;
+
+						  /* Kenarlık */
+						  border: 3px black solid;
+
+						  /* İç boşluk */
+						  padding: 5px;
+
+						  /* Genişlik */
+						  width: 300px;
+
+					   }
+					   </div><br>
+
+					   Şimdi bu tablomuzun nasıl göründüğüne bakalım:<br><br>
+
+					   <div style="background-color: #C0C0C0; border: 1px #000000 solid;"><div style="margin: 20px; padding: 5px; border: 3px black solid; width: 300px; background-color: #FFFFFF;">
+						  Vazgeç gönlüm sen bu aşktan!<br>
+						  Sana kıymet veren mi var?
+					   </div></div><br>
+
+					   Yukarıdaki kutumuzun toplam genişliği (20x2)+(3x2)+(5x2)+300 = 356 dır.<br><br>
+
+					   <h2>Tarayıcı Uyumluluğu</h2>
+
+					   Bazı eski tarayıcılar sitenizi hazırladığınızdan farklı gösterebilir. Bu sorunla karşılaşma nedeniniz sayfanızın başında DOCTYPE kullanmamanız olabilir. Bu nedenle uyumluluk için aşağıdaki kodu mutlaka sayfa kodlarınızın başında kullanın.<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+					   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+					   </div><br>
+					<br /><br/>
+					<div class="kaydir">
+						<a href="12- Css Kenarlıklar (Border).html" id="next-page">
+							Sonraki Sayfa ---> Css Kenarlıklar (Border)
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir"  id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

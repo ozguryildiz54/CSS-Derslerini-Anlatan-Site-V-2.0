@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 
+				<div>
+				    <h2>CSS Listeleme</h2>
+					<br><br>
+				   Listelerde kullandığımız madde imlerini biçimlendirirken CSS'den faydalanabiliriz.<br><br>
+				   CSS üç bakımdan işimize yarar:<br><br>
+				   <ul class="liste-kaydir"  id="cerceve">
+					  <li>Sıralı listelerdeki numaraların görünüşünü değiştirebiliriz.</li>
+					  <li>Maddelenmiş listelerdeki imlerin şekillerini değiştirebiliriz.</li>
+					  <li>Madde imi yerine belirlediğimiz bir resim kullanabiliriz.</li>
+				   </ul><br/>
+				   Listelerde biçimlendirme yaparken sıklıkla kullanılan komutlar:<br><br>
+				   <ul class="liste-kaydir"  id="cerceve">
+					  <li>list-style-type</li>
+					  <li>list-style-image</li>
+					  <li>list-style-position</li>
+					  <li>list-style (Birleştirilmiş)</li>
+				   </ul>
+				   <h2>list-style-type: Listeleme Şekli Tipi</h2>
+				   Bir listenin stilini belirlememizi sağlar. Aşağıdaki örnekte madde işaretleri kare (square) olacaktır:<br><br>
+				   ul { list-style-type: square; }<br/><br/>
+				   Aşağıdaki şekilde görünecektir:<br><br>
+
+				   HTML Görünümü Listeleme Şekilleri<br><br>
+						   <ul class="liste-kaydir"  id="cerceve">
+							  <li style="list-style-type: square;">Maddelenmiş Liste</li>
+							  <li style="list-style-type: square;">Numaralanmış Liste</li>
+						   </ul><br>
+				   UL (maddeli) ve OL (numaralı) listelerde farklı farklı stiller kullanılabilir.<br><br>
+				   Örneğin numaralı listemizdeki numaraların roma rakamı olmasını istiyorsak:<br><br>
+				   <div>
+					  <div>
+						<pre>   ol.a { list-style-type: upper-roman; }
+						</pre>
+				      </div>
+				   </div><br>
+				   Alfabedeki küçük harflerin listelenmesini istiyorsak:<br><br>
+				   <div>ol.b { list-style-type: lower-alpha; }
+				   </div><br>
+				   İçi boş daireleri madde imi yapmak istiyorsak:<br><br>
+				   <div>ul.c { list-style-type: circle; }
+				   </div><br>
+				   Görüldüğü gibi birçok şekli var. Kullanabileceklerinizin tamamı:<br><br>
+				   <b>OL (numaralı liste) için:</b> armenian, decimal, decimal-leading-zero, lower-alpha, lower-greek, lower-latin, lower-roman, none (boş bırak), upper-alpha, upper-latin, upper-roman.<br><br>
+				   <b>UL (maddeli liste) için:</b> circle (içi boş yuvarlak), disc (yuvarlak), square (kare), none (boş bırakır - göstermez).<br><br>
+				   <h2>list-style-image: Madde İşareti Yerine Resim Kullanmak</h2>
+				   Küçük bir resim belirterek onun madde imi yerine kullanılmasını sağlayabiliriz.<br><br>
+				   <div>   ul { list-style-image: url('madde.gif'); }
+				   </div><br>
+				   Bu durumda madde.gif resmi her maddenin başında kullanılacak madde imimiz olacaktır.<br><br>
+				   <h2>list-style-position: Madde İmi Nerede Olacak?</h2>
+				   Madde iminin maddenin içinde mi dışında mı olacağını belirtir. inside içinde, outside dışında olacak demektir.<br><br>
+				   <div>   ul { list-style-position: inside; }
+				   </div><br>
+				   Bu durumda madde.gif resmi her maddenin başında kullanılacak madde imimiz olacaktır.<br><br>
+				   
+				   <h2>list-style: Kısa Yoldan Kullanım</h2>
+				   Yukarıda belirtilen tüm özellikleri tek bir kod ile de kullanabiliriz. Aşağıdaki örneğe bakalım:<br><br>
+				   <div>   ul { list-style: square url("madde.gif"); }
+				   </div><br>
+				   Örneğe bakılırsa madde imimiz kare biçimli olacak ve üzerine madde.gif işlenecektir. Yani önce list-style-type belirttik sonra list-style-image belirttik.<br><br>
+					<br /><br/>
+					<div class="kaydir">
+						<a href="10- Css Tablolar.html" id="next-page">
+							Sonraki Sayfa ---> Css Tablolar
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir"  id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

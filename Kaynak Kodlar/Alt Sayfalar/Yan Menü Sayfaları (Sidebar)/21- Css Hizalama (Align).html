@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 
+				<div>
+					   <h2>CSS Hizalama (align)</h2>
+					   <h2>Kutu Özellikli Elementlerin Hizalanması</h2>
+
+					   Daha önceki derslerimizde bazı HTML elementlerinin kutu bazılarının satır içi olduğundan söz etmiştik (bak. <a href="18- Css Gösterme - Gizleme.html">CSS Display</a>).<br><br>
+
+					   Kutu özellikli nesnelerde hizayı ayarlamak için <a href="6- Css Yazılar.html">text-align</a> kullanılabilir.<br><br>
+
+					   Fakat bu dersimizde farklı yollardan nasıl hizalama yapılır bundan bahsedeceğiz.<br><br>
+
+					   <h2>Margin Kullanarak Ortalamak</h2>
+
+					   Kutu özellikli elementler sağ ve sol dış boşluk (margin) değerleri <b>auto</b> yapılarak ortalanabilir. Tarayıcı bu durumda sağ ve sol boşlukları kendi ayarlayacağı için yazı ortalanacaktır. Ancak bu durumda genişlik yani <b>width</b> hiçbir zaman 100% olmamalıdır. Aksi takdirde kenarlık tarayıcı tarafından ayarlanamaz. Örneğe bakalım:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   .center
+					   {
+						  margin-left:auto;
+						  margin-right:auto;
+
+						  width:70%;
+
+						  background-color:#b0e0e6;
+					   }
+					   </div><br>
+
+					   Yukarıdaki örnek çalıştırıldığında tarayıcı otomatik olarak 15% sola 15% sağa boşluk verir ve genişliğe göre bunu oranlar.<br><br>
+
+					   <h2>Position Kullanarak Sağa ve Sola Yaslamak</h2>
+
+					   Normal akıştan farklı olacak bir <b>position: absolute;</b> kodu kullanarak belirttiğimiz genişlikte bir kutunun sağa ya da sola yaslanmasını sağlayabiliriz. Örneğin 500 piksellik bir kutuyu sağa yaslamak isteseydik:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   .center
+					   {
+						  position: absolute;
+
+						  right; 0px;
+
+						  width: 500px;
+
+						  background-color:#b0e0e6;
+					   }
+					   </div><br>
+
+					   Sağdan 0 piksel boşluk bırakılacağını <b>right: 0px;</b> ile belirtmiş olduk.<br><br>
+
+					   <h2>Float Kullanarak Sağa ve Sola Yaslamak</h2>
+
+					   Float HTML elementlerini sağa veya sola kaydırarak listelememizi sağlar. Kaydırma özelliğini hizalamak için kullanabiliriz:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   .right
+					   {
+						  float: right;
+
+						  width: 300px;
+
+						  background-color:#b0e0e6;
+					   }
+					   </div><br>
+
+					   Kod çalıştığında 300 piksellik bir kutu sağa yaslanmış olacaktır.<br><br>
+					<div class="kaydir">
+						<a href="22- Css Özel İfadeler (Pseudo).html" id="next-page">
+							Sonraki Sayfa ---> Css Özel İfadeler (Pseudo)
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir" id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

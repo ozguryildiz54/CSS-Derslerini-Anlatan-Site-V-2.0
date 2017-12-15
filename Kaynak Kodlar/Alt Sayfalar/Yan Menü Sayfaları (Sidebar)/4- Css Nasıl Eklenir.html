@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 
+				<h2>CSS Nasıl Eklenir?</h2>
+				<br/><br/>
+				<div>
+					Bir tarayıcı açıldığı zaman stilleri okur ve o stilin kullanıldığı HTML elementlerini belirtilen özelliklere göre şekillendirir.
+					Üç şekilde sayfamıza stil ekleyebiliriz. Bunlar:
+					<br/><br/>
+					<ul  class="liste-kaydir" id="cerceve">
+						<li>Stilleri CSS Dosyasından Çağırmak</li>
+						<li>HTML Sayfasında CSS Yazmak</li>
+						<li>HTML Elementinin İçerisinde Stil Belirtmek</li>
+					</ul>
+					<br/>
+					<h2>1. Stilleri CSS Dosyasından Çağırmak</h2>
+					Öncelikle bir not defteri ya da CSS düzenleyici program açmalısınız.
+					CSS Kodlarınızı CSS Kod Yapısı'na uygun olarak yazın ve kaydedin.
+					HTML Sayfanızı açıp &lt;head&gt; ile &lt;/head&gt; arasına aşağıdaki şekilde stil dosyanızın adını belirtin.
+					<br/><br/>
+					<pre id="cerceve"> &lt;link href="stil_dosyasi.css" type="text/css" rel="stylesheet"/&gt; </pre>
+					<br /><br />
+					href="DOSYA_ADI" ile belirttiğimiz yerde bizim kaydettiğimiz dosyanın adı yer almalı ve HTML sayfası ile CSS dosyası aynı klasörde bulunmalıdır. Farklı bir klasörde kullanmak istiyorsak HTML sayfasına göre konumu yazmamız gereklidir.
+					Dosya adını doğru yazdıysak artık CSS dosyamızı HTML sayfamıza bağladık demektir. Yani CSS dosyamızdaki stilleri rahatlıkla HTML sayfamızda kullanabiliriz.
+					<br /><br/>
+					<h2>2. HTML Sayfasında CSS Yazmak</h2>
+					<br/>
+					<div  id="cerceve" class="liste-kaydir">
+					&lt;html&gt;
+					<ul class="liste-kaydir">
+					   &lt;head&gt;
+					   <ul class="liste-kaydir">
+						  &lt;title&gt;Sayfa Başlığı&lt;/title&gt;
+						  <br/>
+						  &lt;style type="text/css"&gt;
+						  <br/><ul class="liste-kaydir">
+							 body { background-color:black; color:white; }
+							 <br/>
+							 p { font-family: Tahoma, Verdana; font-size: 12px; }
+							</ul>
+						  &lt;/style&gt;
+						</ul>
+					   &lt;/head&gt;<br/>
+					   &lt;body&gt;
+					   <ul class="liste-kaydir">
+						  &lt;p&gt;Bu 12 piksel Tahoma yazı tipi ile yazıldı.&lt;/p&gt;
+						</ul>
+					   &lt;/body&gt;
+					</ul>
+					&lt;/html&gt;
+					</div>
+					<br/><br/>
+					Örneğe baktığımızda &lt;style type="text/css"&gt; elementini HEAD elementi içinde açıp kapatıyor ve içine stillerimizi yazıyoruz. Böylelikle dosyamızda belirttiğimiz stiller dışarıdan bir dosyaya bağlı olmaksızın kullanılabilir olacaklar.
+					<br/><br/>
+					<h2>3. HTML Elementinin İçerisinde Stil Belirtmek</h2>
+					Bazen stil dosyası ya da STYLE elementi kullanmadan hızlı çözümler üretmek gerekebilir. Böyle durumlarda her elementin style="" özelliği kullanıma hazırdır. CSS kodlarını element içinde açacağımız STYLE özelliğine sıralarız. Örneğin;					
+					<br /><br />
+					<div  id="cerceve" class="liste-kaydir">	
+						&lt;p style="font-family: Tahoma; font-size: 12px;"&gt;<br/>
+						<p class="liste-kaydir">Bu 12 piksel Tahoma yazı tipi ile yazıldı.</p>
+					    &lt;/p&gt;
+						</div>
+					<br /><br />
+					Size tavsiye edeceğimiz kullanım yolu 1 numaralı maddede anlattığımız harici bir dosya kullanmanızdır.
+					<br /><br />
+					<div class="kaydir">
+						<a href="5- CSS Arkaplanlar.html" id="next-page">
+							Sonraki Sayfa ---> CSS Arkaplanlar
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir" id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

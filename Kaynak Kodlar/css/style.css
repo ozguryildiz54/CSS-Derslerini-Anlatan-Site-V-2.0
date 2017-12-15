@@ -1,0 +1,271 @@
+/*Aşağıdaki blok tüm elementlere uygulanır*/
+*{
+	/*Bu işlem sıfırlama işlemidir.*/
+	padding: 0; /*Padding içten boşluk verir.*/
+	margin: 0; /*Margin dıştan boşluk verir.*/
+}
+	
+		/*Wrapper Bölgesi Başlangıcı*/	
+		/*En dışta ki kalıpdır.İçerisinde Header, Container ve Footer kalıpları bulunur. head ve body etiketleri wrapper bloğunun içinde etki göstermektedir.*/
+		#wrapper {
+			margin: 0 auto; /*Başlangıç x konumunda ki boşluk sıfır iken y konumunda ki boşluk otamatik değişidir.*/
+			width: 800px;	/*x konumunda 800px kadar bir alanda web sitem yayınlanacak*/
+		}
+			
+			/*Body bölgesi Başlangıcı*/
+			/*Aşağıdaki blokta Body etiketinde ki tüm etiketlerin alacağı özellikler şunlardır: arkaplan rengi, font tipi, yazı boyutu,  satır yüksekliği ve yazı rengi*/	
+			body {
+				background: #fff;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 18px;
+				color: #333333;
+			}
+			/*--- Body Bölgesinin Sonu ---*/
+			
+			/*Header Bölgesi Başlangıcı*/
+			
+				/*Başlık kısmı ile alakalı boşluk renk font boyutu ve satır yüksekliği ve altı çizili olmaması tanımlanmıştır. */
+				#header { 
+					padding: 10px 0 20px 0;
+				}
+				#header h1 {
+					color:#0CF;
+					font-size: 26px;
+					font-weight: 100;
+					padding: 12px 0 5px 10px;
+				}
+				#header h1 a {
+					color:#0CF;
+					text-decoration: none;
+				}
+				#header h1 a:hover { /*Fare ile başlığın üzerine geldiğimde gerçekleşecek işlemler*/
+					color:#0CF;
+					text-decoration: none;
+				}
+				#header h2 {
+					color: #57626a;
+					font-size: 15px;
+					font-weight: 100;
+					padding: 0 0 0 11px;
+					line-height: 18px;
+				}			
+				
+				/*Üstteki menü ile alakalı tanımlamalar*/
+				/*Menünün alacağı özellikler şunlardır: yazı merkezden başlar, satır yüksekliği, arka plan rengi, büyük harf yazımı gölgelendirme menü arası sağ ve sol boşluklar altı çizili olmaması gibi özellikler tanımlanmıştır */
+				#menu {
+					text-align: center;
+					height: 40px;
+					line-height: 40px;
+					background: #cd853f;
+					text-transform: uppercase;
+					box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+					padding: 0 14px;
+					border-radius:22px 0px 22px 0px ;
+				}
+				#menu ul {
+					padding-left: 20px;
+					padding-right: 5px;
+					list-style-type: none;
+				}
+				#menu ul li {
+					display: block;
+					float: left;
+				}
+				#menu ul li a {
+					color: #eee;
+					padding: 0 10px;
+					text-decoration: none;
+					font-weight: 100;
+					font-size: 12px;
+				}
+				#menu ul li a:hover {
+					text-align: center;
+					font-size: 14px;
+					transition: 0.4s;
+					background-color: #3F0;
+					color: #ffffff;
+					padding: 20px 10px;
+					border-radius:0px 22px 0px 22px ;
+					box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);	
+				}
+
+			/*Header  Bölgesi Sonu*/
+			
+			/*Container  Bölgesi Başlangıcı*/
+				
+				/*Her hangi bir liste veya metni ekranda içeriklerin yazılmaya başlanan alanın 40 pixel sağından itibaren yazılmasını sağlar yani yazıyı yazıldığı konumun 40 pixel sağına öteler*/
+				.liste-kaydir{
+					-webkit-padding-start: 40px;
+				}
+				
+				/*Content Bölgesi Başlangıcı*/
+				
+					/*İçerik bölgesinde yayımlanan içeriğin özellikleri:üst boşluk değeri, içeriğe genişlik , sağdan başlama özelliği ve yazıyı sağa ve sola yaslama özelliği kazandırdım.Diğerleri yukarıda anlattığım renk altı çizili olmaması özelliği yazı boyutu boşluk miktarı gibi özelliklerdir.*/
+					.right {
+						width: 568px;
+						float: right;
+						font-size: 16px;
+						text-align: justify;
+					}
+					.right h2 {
+						margin-top: 20px;
+						color:#666;
+						font-size: 20px;
+						font-weight: 100;
+						padding : 10px 0 15px 0;
+					}
+					.right a { text-decoration: none }
+					
+					/*Makalelerin en altında sonraki sayfaya gitmek için kullandım.Sonraki sayfa yazısının renk bilgisini ve ekranın sağından itibaren 20 pixellik mesafede yazılacağını tanımladım.*/
+					#next-page{
+						color:#0CF;
+						font-size: 20px;
+					}
+					
+					/*Resmi yazıldığı satırın en sağına margin değerlerince belirtilen ölçülerde yazdırır.*/	
+					.img-right {
+						position: relative;
+						float: right;
+						margin: 10px 0 10px 15px;
+					}
+	
+					/*Resmi yazıldığı satırın en soluna margin değerlerince belirtilen ölçülerde yazdırır.*/
+					.img-left {
+						position: relative;
+						float: left;
+						margin: 10px 15px 10px 0;
+					}
+					
+					/*Bu iki sınıfda resmin arkaplan, saydamlık, boyutu, rengi, kaynak yolu ve duvar kalınlığı gibi özellikleri belirtilir.*/
+					div.background 
+					{ width:400px; height:330px; background:url('../images/th_4.jpg') repeat; border:2px solid black; }
+					div.transbox 
+					{ width:300px; height:260px; margin:30px 50px; background-color:#ffffff;border:1px solid black; opacity:0.6; filter:alpha(opacity=60);}
+					
+					/*İçerik kısmında herhangi bir yazının arkasına cerceve vermek istiyorsam bu id yi kullanıyorum. Örnek olarak ekranda kod örneği yada listeli bir şey verdiysem arkaplanda ki rengi farklı duvarları ve gölgelendirmesi olan bir cerceve üzerinde içeriği yayınlıyorum.*/
+					#cerceve {
+						font-size: 16px;/*Yazı boyutu*/
+						color: #000;/*Siyah yazı rengi*/				
+						border-radius:0px 39px 0px 39px ;
+						background-color: #F8F8F8;	
+						padding-top: 20px;
+						padding-bottom: 20px;
+						padding-right: 20px;
+						line-height: 30px;
+						text-align: left;
+						box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+					}
+					
+					#cerceveSidebar {				
+						color: #000;				
+						border-radius:25px 25px 25px 25px ;
+						background-color: #F8F8F8;	
+						padding-top: 20px;
+						padding-bottom: 20px;
+						padding-right: 10px;
+						padding-left: 10px;
+						line-height: 30px;
+						text-align: center;
+						box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+					}
+					
+					/*Bu sınıflar tablo oluşturmada tablonun çercevesini satırların arkaplan renklerini ve tablonun boyutlarını belirler*/
+					table.tablo-cerceve { background-color: #98BF21; }
+					td.tablo-satir-1, td.tablo-satir-2-4, td.tablo-satir-3-5 { padding: 3px 5px 3px 5px; }
+					td.tablo-satir-1 { background-color: #A7C942; color: #FFFFFF; font: 10pt Arial, Helvatica; font-weight: bold; }
+					td.tablo-satir-2-4, td.tablo-satir-3-5 { color: #404040; font: 10pt Arial, Helvatica; }
+					td.tablo-satir-2-4 { background-color: #FFFFFF; }
+					td.tablo-satir-3-5 { background-color: #EAF2D3; }
+
+					/*Yazdıracağınız her neyse ekranda ki içerik alanının en sağına yazar yani kullanıldığı div etiketinin en sağına yazdırır.*/	
+					.kaydir { float:right;}
+						
+					/*Bu sınıfı belirtilen width ve height değerleri kadar bir çerceve oluşturup soldan itaberen aralarında 5 pixel mesafe olan resimler koymak için kullandım. */	
+					.thumb {
+						float: left;
+						width: 110px;
+						height: 110px;
+						margin: 5px;
+					}
+							
+					/*Resim için duvar(sınır)olmasın  özelliği*/	
+					img { border: none; }
+						
+					/*Link için renk bilgisi ve link verilen yazının altı çizili olmamasını ayrıca fare ile link üzerine geldiğimde linkin altı çizili olup renginin değişmesi için aşağıdaki tanımlamayı yaptım.*/
+					a { color: #57626a; text-decoration: none; }
+					a:hover { text-decoration: underline; color : #EEA200; }
+					
+				/*Content Bölgesi Sonu*/
+				
+				/*Sidebar Bölgesi Başlangıcı*/
+				
+					/*Gölgelendirme, yazının merkezden başlaması genişlik değeri yanmenünün soldan başlaması ve font büyüklüğü özelliklerini aşağıdaki gibi gerçekleştirdim.*/
+					.left {
+						box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+						text-align: center;
+						width: 150px;
+						float: left;
+						border: 2px solid #bbb;
+						font-size: 12px;					  
+					}
+					/*Fare ile yan menüde ki listelerin üzerine gelince şu özellikleri tanımladım : Duvarın alt ve üst kalınlığı, boşluk değeri, değişim veya geçiş süresi ve font büyüklüğü tanımlamam aşağıdaki gibidir.*/
+					.left ul li :hover
+					{
+						border-bottom: 4px solid #3F0;
+						padding: 6px 0; 
+						transition: 0.4s;
+						font-size: 14px;
+					}
+
+					.left li {
+						list-style-type:none;
+					}
+					
+					/*Yan menüde ki listelerin başlıkları şu özelliklerdedir: sırasıyla üst boşluk değeri, yükseklik, font boyutu, renk bilgisi, satır yüksekliği ve satır genişliği özellikleri aşağıdaki gibi tanımlanmıştır.*/
+					.left h2 {
+						margin-top: 20px;
+						height: 30px;
+						font-size: 14px;
+						color: #FFF;
+						line-height: 30px;
+						font-weight: 600;
+						border-radius:0px 39px 0px 39px ;
+						background-color: #0CF;	
+					}
+		
+					.left a { text-decoration: none } /*Yan menüdeki liste içerisinde ki linklerinin altı çizili olmamasını sağlar*/
+					
+				/*Sidebar Bölgesi Sonu*/
+				
+			/*--- Container Bölgesinin sonu ---*/
+			
+			/*Footer Bölgesi Başlangıcı*/	
+			
+			/*Footer bölgesinin özellikleri şunlardır: sırasıyla arkaplan rengi, üst duvar ve boşluk boyutu ve rengi yazının merkezden başlaması yazının renk bilgisi font boyutu boşluk değeri ve gölgelendirmeler aşağıdaki gibi yapılmıştır.*/
+			#footer {
+				border-radius:25px 25px 25px 25px ;
+				background: #F8F8F8;
+				border-top: 3px solid #57626a;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				text-align: center;
+				color: #0CF;
+				font-size: 11px;
+				padding: 10px;
+				box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+				text-decoration: none;
+			}
+
+			#footer a:hover { 
+				text-decoration: none;				
+				color : #EEA200;
+				border-bottom: 4px solid #3F0;
+				padding: 6px 0; 
+				transition: 0.4s;
+				font-size: 14px;				
+			}
+			
+			/*--- Footer Bölgesinin sonu ---*/
+						
+	    /*--- Wrapper Bölgesinin Sonu ---*/

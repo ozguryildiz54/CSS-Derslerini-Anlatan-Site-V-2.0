@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 
+				<div>
+
+					   <h2>CSS Kaydırma (float)</h2>
+					   
+					   Katmanlarla çalışmak ve resim galerileri oluşturmak için HTML elementlerini sağa ve sola doğru kaydırmamız gerekebilir. İşte css kodu <b>float</b> bunu yapmamızı sağlıyor:<br><br>
+
+					   <h2>Elementler Nasıl Kaydırılır?</h2>
+
+					   Elementler yatay yönde sağa ve sola doğru kaydırılabilir. Yani aşağı doğru kaydırma söz konusu değil.<br><br>
+
+					   Kaydırılan element, sağ ya da soldaki elementin sağından veya solundan başlar. Yeni kaydırılan elementler, ilk önce kaydırılan elementten sonra gelir. Dolayısıyla önceden kaydırılmış elementlerde bir değişiklik olmaz.<br><br>
+
+					   Örneğin bir resim için <b>float: right;</b> özelliği belirttiysek yazılar sağ tarafta yer alacak bu resmin solunda yer alacaktır.<br><br>
+
+					   <h2>Elementleri Yan Yana Sıralamak</h2>
+
+					   Resim galerilerini görmüşsünüzdür. Resim sayfalarına giden küçük görüntüler sayfada yan yana sıralanırlar. Bunlar birbirine eşit olmalı ki kaydırıldığında birbiriyle uyumlu olsunlar. Örneğin küçük görüntümüz:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">
+					   .thumb
+					   {
+						  float: left;
+
+						  width: 110px;
+						  height: 110px;
+
+						  margin: 5px;
+					   }
+					   </div><br>
+
+					   <div style="float: left; width: 450px; margin-bottom: 10px; border: 1px #C0C0C0 dotted;">
+						  <img class="thumb" src="../../images/th_1.jpg">
+						  <img class="thumb" src="../../images/th_2.jpg">
+						  <img class="thumb" src="../../images/th_3.jpg">
+						  <img class="thumb" src="../../images/th_1.jpg">
+					   </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+					   Yukarıdaki örnek kodda yer alan özelliğe sahip resimleri sıraladık. Görüldüğü gibi her biri diğerinin sağına kaydırıldı ve aralara 5x2 (sağ, sol) piksellik boşluk (margin) verildi.<br><br>
+
+					   <h2>Kaydırmayı Sonlandırmak</h2>
+
+					   <b>clear: both;</b> kodu artık kaydırmanın sonlandığını ve bundan sonra geçerli olmayacağını bildirmemize yarar.<br><br>
+
+					   <div class="liste-kaydir"  id="cerceve">
+					   .text_line
+					   {
+						  clear: both;
+					   }
+					   </div><br>
+
+					   Kaydırmalı bir nesnenin hemen ardından <b>class="text_line"</b> kullanılmış bir element yer alıyorsa, bu element kaydırma olayının dışında tutulacak ve normal şekilde sayfaya yerleştirilecektir.<br><br>
+					<div class="kaydir">
+						<a href="21- Css Hizalama (Align).html" id="next-page">
+							Sonraki Sayfa ---> Css Hizalama (Align)
+						</a>
+					</div>					
+			    </div>
+			    </div><br>
+				
+		<div class="left" class="liste-kaydir"  id="cerceveSidebar"> 
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

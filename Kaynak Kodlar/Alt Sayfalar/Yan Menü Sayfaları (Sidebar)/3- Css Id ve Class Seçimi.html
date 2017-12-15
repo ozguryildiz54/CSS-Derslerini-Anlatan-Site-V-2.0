@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br />
+			<div class="right"> 
+				<h2>CSS ID ve Class Seçimi</h2>
+				<br/><br/>
+				<div>
+					HTML elementleri için stiller belirleyebildiğiniz gibi size özel stiller belirleyip elementlerin "id" ve "class" özelliklerinde bu stili belirterek de kullanabilirsiniz.
+					<br/>
+					<h2>Class Kullanımı</h2>
+					Bir HTML kaynağına baktığınızda bir element (tag) özelliği olarak class="stil" şeklinde bir özellik belirtildiğini görebilirsiniz. Peki neden buna gerek duymuşlar? Örneğin aşağıdaki HTML kodunu inceleyelim:
+					<br/><br/>
+					<pre id="cerceve">   &lt;div class="stil"&gt;Hoş Geldiniz!&lt;/div&gt;  </pre>
+					<br /><br />
+					Yukarıdaki div elementi içinde yer alan class="stil", o div elementi için CSS özellikleri belirtmemizi sağlayan bir yoldur. CSS dosyamızda şu şekilde bir ifade varsa:
+					<br /><br/>
+					<pre id="cerceve">   .stil {font: 10pt Tahoma, Verdana; color: blue;}  </pre>
+					<br /><br/>
+					Nokta (.) ile başlayan bir stil oluşturduk ve adını biz verdik. Bu demektir ki class="stil" ile belirttiğimiz tüm elementler 10 punto Tahoma yazı tipinde ve mavi (blue) renginde olacaktır. Tabi istersek sadece tek bir elementte geçerli olmasını sağlayabiliriz. Örneğin sadece DIV elementlerinde geçerli olmasını istiyorsak:
+					<br/><br/>
+					<pre id="cerceve"> div.stil {font: 10pt Tahoma, Verdana; color: blue;} </pre>
+					<br/><br/>					
+					Yukarıda tek satırda belirttiğimiz kodları istersek aşağıdaki şekilde de yazabiliriz. Daha anlaşılır olacaktır: 
+					<br/><br/>
+					<pre  id="cerceve">  p { color: red; text-align: center; }</pre>
+					<br/><br/>
+					".stil" yani seçim adımızın başına div getirmemiz yeterli olacaktır. Bu durumda bu CSS kodu sadece DIV elementlerinde kullanılabilir olacaktır.
+					CLASS özelliği kullanmanın bize sağlayacağı yararlara şöyle bir bakalım:
+					Kendimizin adlandırdığı özel stiller yaratmak ve kullanmak
+					Bir stili birden fazla elementte kullanabilmek
+					Stillere CSS de yer verip HTML kodlarımızı sürekli tekrarlanan uzun CSS kodlarından arındırmak
+					<br/><br/>
+					<h2>ID Kullanımı</h2>
+					ID özelliği ile de stiller yaratabiliriz. CLASS'tan farklı yanları:
+					Sadece tek bir elementte kullanılabilir.
+					Aynı id değeri iki elemente verilemez (Her id sadece tek bir elementte kullanılabilir).
+					Stil dosyamızda CLASS'da . (nokta) kullanırdık, ancak id özelliğine göre stilleme yapacaksak # (diyez) kullanırız.Şimdi bu anlattıklarımızı örnek üzerinde görelim:
+					<br/><br/>
+					<pre id="cerceve">  &lt;div id="stil"&gt;Hoş Geldiniz!&lt;/div&gt; </pre>
+					<br/><br/>
+					Örnekte ID değeri "stil" olan bir DIV elementi görüyoruz. CSS dosyamızda bu elemente özel stil tasarlarken aşağıdaki şekilde kod yapısını oluşturmalıyız:
+					<br/><br/>
+					<pre id="cerceve">  #stil {font: 10pt Tahoma, Verdana; color: blue; } </pre>
+					<br/><br/>
+					Görüldüğü gibi bu kez diyez (#) ile başlattık. Sadece tek bir elemente özel stil tasarlamış olduk (Neden? Çünkü başka bir elementte yine id değeri "stil" belirtilemez.)
+					Ayrıca unutmadan söyleyelim hiçbir ID değeri rakamla başlamaz. ID, HTML dosyasında o elementi bulmamızı sağlar, bu nedenle aynı ismi veremeyiz. Aynı ismi vermemizin diğer yaratacağı sorun Java Script'te bu elementi id özelliğine göre kullanamamak olacaktır. Son olarak bazı tarayıcılar birden fazla aynı id kullanılan HTML dosyalarında stilleri görmezden gelebilir.
+					<br /><br />
+					<div class="kaydir">
+						<a href="4- Css Nasıl Eklenir.html" id="next-page">
+							Sonraki Sayfa ---> Css Nasıl Eklenir?
+						</a>
+					</div>					
+			    </div>
+			</div>
+		<br />
+		<div class="left" class="kaydir" id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/"
+		>Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Css Dersleri</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen" />
+		<link rel="shortcut icon" href="../../images/Css.ico">
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1><a href="../../index.html">Özgür YILDIZ</a></h1>
+			<br/>
+			<h2><b>Css ile alakalı tüm merak ettiklerinizi tüm detaylarıyla öğrenebilmek için en doğru adrestesiniz.</b></h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li>  <a href="../../index.html">Anasayfa</a>  </li>
+				<li><a href="../Menü Sayfaları/Web Tasarım İlkeleri.html">Web Tasarım İlkeleri</a></li>
+				<li><a href="../Menü Sayfaları/Öğretici Siteler.html">Öğretici Siteler</a></li>
+				<li><a href="../Menü Sayfaları/Örnek Uygulamalar.html">Örnek Uygulamalar</a></li>
+				<li><a href="../Menü Sayfaları/Web Tasarım Araçları.html">Web Tasarım Araçları</a></li>
+			</ul>
+		</div>
+		<div><br>
+			<div class="right"> 
+				<div>
+					   <h2>CSS Kenarlıklar (Border)</h2>
+					   Bir HTML elementinin kenarlarına çizgi çekerken kullanacağımız kodlar şunlardır:<br><br>
+
+					   <ul class="liste-kaydir" id="cerceve">
+						  <li>border-style</li>
+						  <li>border-width</li>
+						  <li>border-color</li>
+					   </ul><br><br>
+
+					   Ayrıca bunlarla birlikte şu konularda da bilgi vereceğiz:<br><br>
+
+					   <ul class="liste-kaydir" id="cerceve">
+						  <li>Kenarları ayrı ayrı şekillendirmek</li>
+						  <li>Kenarlık kullanımının kısa yolu</li>
+					   </ul><br>
+
+					   <h2>border-style: Kenarlık Stili</h2>
+
+					   Kenarların görünüşünün nasıl olacağı ile ilgili bilgi vermemizi sağlar.<br><br>
+
+					   <b>Kullanabileceğiniz stiller:</b><br><br>
+
+					   <div class="liste-kaydir" style="border: 1px #000000 none;">none - Kenarlık yok</div><br><br>
+					   <div class="liste-kaydir" style="border: 1px #000000 dotted;">dotted - Noktalı</div><br><br>
+					   <div class="liste-kaydir" style="border: 1px #000000 dashed;">dashed - Kesik çizgili</div><br><br>
+					   <div class="liste-kaydir" style="border: 1px #000000 solid;">solid - Çizgi</div><br><br>
+					   <div class="liste-kaydir" style="border: 3px #000000 double;">double - Çift çizgi</div><br><br>
+					   <div class="liste-kaydir" style="border: 5px #000000 groove;">groove</div><br><br>
+					   <div class="liste-kaydir" style="border: 5px #000000 ridge;">ridge</div><br><br>
+					   <div class="liste-kaydir" style="border: 5px #000000 inset;">inset</div><br><br>
+					   <div class="liste-kaydir" style="border: 5px #000000 outset;">outset</div><br><br>
+
+					   Örnek bir kullanım:<br><br>
+					   <div class="liste-kaydir" id="cerceve">
+							.kutum { border-style: dotted; }
+					   </div><br>
+					   <h2>border-width: Kenarlık Boyutu</h2>
+
+					   Kenar genişliğini belirtmemizi sağlar. ÖNCELİKLE MUTLAKA border-style belirtmemiz gerekir, aksi takdirde görüntülenmeyecektir.<br><br>
+
+					   Örnek bir kullanım:<br><br>
+					   <div class="liste-kaydir" id="cerceve">
+							.kutum { border-style: solid; border-width: 1px; }
+					   </div><br>
+					   <h2>border-color: Kenarlık Rengi</h2>
+
+					   Kenarlık rengini bu komutla değiştirebiliriz. ÖNCELİKLE MUTLAKA border-style belirtmemiz gerekir, aksi takdirde görüntülenmeyecektir.<br><br>
+
+					   Renk kullanımı hakkında bilgi için <a href="5- Css Arkaplanlar.html">buraya tıklayın</a>.<br><br>
+
+					   Örnek bir kullanım:<br><br>
+					   <div class="liste-kaydir" id="cerceve">
+					      .kutum {
+						  border-style: solid;
+						  border-width: 1px;
+						  border-color: #0000CC;
+					   }
+					   </div><br>
+
+					   <h2>Kenarları Ayrı Ayrı Şekillendirmek</h2>
+
+					   İstiyorsak yukarı (top), aşağı (bottom), sağ (right) ve sol (left) kenarları ayrı ayrı biçimlendirebiliriz.<br><br>
+
+					   <ul class="liste-kaydir" id="cerceve">
+						  <li><b>border-left-style</b> - Sol kenarın şekli.</li>
+						  <li><b>border-right-style</b> - Sağ kenarın şekli.</li>
+						  <li><b>border-top-style</b> - Üst kenarın şekli.</li>
+						  <li><b>border-bottom-style</b> - Alt kenarın şekli.</li>
+					   </ul><br><br>
+
+					   Ayrıca border-style dört kenarın değerini de alacak şekilde yazılabilir. Örneğin:<br><br>
+
+					   <b>border-style: dotted solid double dashed;</b><br><br>
+					   <ul class="liste-kaydir" id="cerceve">
+					   <li><b>Üst kenar - dotted</b></li><br>
+					   <li><b>Sağ kenar - solid</b></li><br>
+					   <li><b>Alt kenar - double</b></li><br>
+					   <li><b>Sol kenar - dashed</b></li>
+					   </ul><br><br>
+
+					   Farkettiyseniz border-style yazdıktan sonra sırasıyla saat yönünde kenarları ayrı ayrı belirttik.<br><br>
+
+					   <b>border-style: dotted solid double;</b><br><br>
+
+					   Üst kenar - dotted,<br>
+					   Sağ ve Sol kenar - solid,<br>
+					   Alt kenar - double,<br><br>
+
+					   Bu kullanımda 4. kenarı yazmadık. Bu kenar solu işaret ettiği için tam tersi olan Sağ taraftaki özelliği alacaktır.<br><br>
+
+					   <b>border-style: dotted solid;</b><br><br>
+
+					   Üst kenar ve alt kenar - dotted,<br>
+					   Sağ ve Sol kenar - solid,<br>
+
+					   Bu kullanımda Yukarı - Aşağı kenarlar ilk yazılan dotted, Sol ve Sağ kenarlar ikinci yazılan solid biçiminde olacaktır.<br><br>
+					   <h2>Kenar Belirtmenin Kısa Yolu</h2>
+
+					   Sadece <b>border</b> kullanarak da border-width, border-color ve border-style değerlerini belirtmemiz mümkün. Örneğe bakalım:<br><br>
+
+					   <div class="liste-kaydir" id="cerceve">   
+					      .kutum {
+						  border: 1px #0000CC solid;
+					   }
+					   </div><br>
+
+					   <a href="12- Css Kenarlıklar (Border).html">Buradaki örnekte</a> yer alan üç kodu tek bir kodda birleştirdik. Sırasıyla önce border-width değerini yazdık, sonra border-color ve en son border-style ile üç özelliği birlikte kullandık.<br><br>
+
+					   Bu kısayolu da kenarlara ayrı ayrı uygulamanız mümkün. Bu komutlar:<br><br>
+
+					  <ul class="liste-kaydir" id="cerceve">   
+						  <li><b>border-left</b> - Sol kenar</li>
+						  <li><b>border-right</b> - Sağ kenar</li>
+						  <li><b>border-top</b> - Üst kenar</li>
+						  <li><b>border-bottom</b> - Alt kenar</li>
+					   </ul>
+						<br /><br/>
+					<div class="kaydir">
+						<a href="13- Css Dış Kenarlık (Outline).html" id="next-page">
+							Sonraki Sayfa ---> Css Dış Kenarlık (Outline)
+						</a>
+					</div>					
+			    </div>
+			</div><br>
+
+		<div class="left" class="kaydir" id="cerceveSidebar"> 
+
+			<h2>Temel Bilgiler</h2>
+			<ul><br/>
+				<li><a href="1- Css Nedir.html">Css Nedir?</a></li> <br/>
+				<li><a href="2- Css Kod Yapısı.html">Kod Yapısı</a></li> <br/>
+				<li><a href="3- Css Id ve Class Seçimi.html">Id ve Class</a></li> <br/>
+				<li><a href="4- Css Nasıl Eklenir.html">Css Nasıl Eklenir?</a></li><br/>
+			</ul>
+
+			<h2>Css Stilleri</h2>
+			<ul><br/>
+				<li><a href="5- Css Arkaplanlar.html">Arkaplanlar</a></li> <br/>
+				<li><a href="6- Css Yazılar.html">Yazılar</a></li> <br/>
+				<li><a href="7- Css Yazı Tipleri.html">Yazı Tipleri</a></li> <br/>
+				<li><a href="8- Css Bağlantılar.html">Bağlantılar</a></li><br/>
+				<li><a href="9- Css Listeleme.html">Listeleme</a></li><br/>
+				<li><a href="10- Css Tablolar.html">Tablolar</a></li><br/>
+			</ul>
+
+			<h2>Kenarlıklar</h2>
+			<ul><br/>
+				<li><a href="11- Css Kutu Modeli.html">Kutu Modeli</a></li> <br/>
+				<li><a href="12- Css Kenarlıklar (Border).html">Kenarlıklar</a></li><br/> 
+				<li><a href="13- Css Dış Kenarlık (Outline).html">Dış Kenarlık</a></li> <br/>
+				<li><a href="14- Css Dıştan Boşluk (Margin).html">Dıştan Boşluk</a></li><br/>
+				<li><a href="15- Css İçten Boşluk (Padding).html">İçten Boşluk</a></li><br/>
+			</ul>	
+
+			<h2>Css İleri Düzey</h2>
+			<ul><br/>
+				<li><a href="16- Css Gruplama ve Üzerine Yazma.html">Gruplama ve Yazma</a></li> <br/>
+				<li><a href="17- Css Sınırlama.html">Sınırlama</a></li> <br/>
+				<li><a href="18- Css Gösterme - Gizleme.html">Gösterme - Gizleme</a></li> <br/>
+				<li><a href="19- Css Pozisyon Belirleme (Position).html">Pozisyon Belirleme</a></li><br/>
+				<li><a href="20- Css Kaydırma (Float).html">Kaydırma (Float)</a></li><br/>
+				<li><a href="21- Css Hizalama (Align).html">Hizalama (Align)</a></li> <br/>
+				<li><a href="22- Css Özel İfadeler (Pseudo).html">Özel İfadeler</a></li> <br/>
+				<li><a href="23- Css Transparanlık (Opacity).html">Transparanlık</a></li> <br/>
+				<li><a href="24- Css Çıktı Türleri (Media).html">Çıktı Türleri</a></li><br/>
+				<li><a href="25- Css Özellik Seçimi (Attribute).html">Özellik Seçimi</a></li><br/>
+				<li><a href="26- Css' e Özel Bakış.html">Css' e Özel Bakış</a></li><br/>
+			</ul>
+		</div>
+		<div style="clear: both;"> </div>
+	</div>
+
+		<div id="footer">
+		<a href="http://www.yldzozgur.wordpress.com/">Özgür YILDIZ Kişisel Blog</a>
+		</div><br>
+	</div>
+</body>
+</html>
